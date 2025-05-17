@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <h1>BUDGET TRACKER</h1><br>
+    <div class="controls">
+        <label for="budget">Vnesi denar:</label>
+        <input type="number" id="budget" step="10" min="0">
+        <button id="polog">POLOŽI</button> 
+        <button id="resetiraj">Resetiraj podatke</button> 
+
+      </div>
+      
+      <table>
+        <tr><td id="x">Budget:</td></tr>
+        <tr><td id="y">End of month:</td></tr>
+      </table>
+      <br>
+      <h3>Transakcije</h3>
+      
+      <div class="controls">
+        <input type="number" id="strosek" min="0" placeholder="Znesek">
+        <button id="dodajTransakcijo">Dodaj transakcijo</button>
+      </div>
+      
+      <table id="transakcije">
+        <tr>
+          <th>Datum</th>
+          <th>Znesek</th>
+        </tr>
+      </table>
+</body>
+</html>
